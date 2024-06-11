@@ -1,0 +1,41 @@
+{
+	"dependencies": {
+		"HelloWorld": {
+			"source": "testnet://9dca641e9a4b691b.HelloWorld",
+			"hash": "a991d1f98f0523d1f4954bb242b2d0fbbd3ddab4255c8d378f0854f1f975d187",
+			"aliases": {
+				"testnet": "9dca641e9a4b691b"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"Alberthor": {
+			"address": "01cf0e2f2f715450",
+			"key": "857f856397f0af45aac92514acd662124fde17d7826cd795f2e1b3b90c96c070"
+		},
+		"Alberthor47": {
+			"address": "01cf0e2f2f715450",
+			"key": "19cf05f3b3e19e12ce20a500d097535e9c22794a266fdecdbedaeb346a1829cf"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "emulator-account.pkey"
+			}
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"HelloWorld"
+			]
+		}
+	}
+}
